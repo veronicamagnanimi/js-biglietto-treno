@@ -33,6 +33,18 @@ if (eta < 18) {
 
 console.log(totale);
 
+// BONUS
+if(isNaN(eta)) {
+    console.log(false);
+} else {
+    console.log(true);
+}
+
+if(isNan(eta < 0)) {
+    console.log(false);
+} else {
+    console.log(true);
+}
 
 
 
