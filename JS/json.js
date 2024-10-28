@@ -13,8 +13,7 @@ console.log(eta);
 // ESECUZIONE LOGICA
 const prezzoIntero = prezzo * userKm;
 console.log(prezzoIntero);
-const decimali = prezzoIntero.toFixed(2);
-
+ 
 const prezzoScontato1 = ((prezzoIntero / 100) * 20);
 const prezzoFinale1 = prezzoIntero - prezzoScontato1;
 const prezzoScontato2 = ((prezzoIntero / 100) * 40);
@@ -25,11 +24,11 @@ console.log(prezzoFinale1, prezzoFinale2);
 let totale;
 
 if (eta < 18) {
-    totale = `Il prezzo del biglietto è ${prezzoFinale1}`;
-} else if (eta > 65) {
-    totale = `Il prezzo del biglietto è ${prezzoFinale2}`;
+    totale = `Il prezzo del biglietto è €${prezzoFinale1.toFixed(2)}`;
+} else if (eta >= 65) {
+    totale = `Il prezzo del biglietto è €${prezzoFinale2.toFixed(2)}`;
 } else {
-    totale = `Il prezzo del biglietto è ${prezzoIntero}`;
+    totale = `Il prezzo del biglietto è €${prezzoIntero.toFixed(2)}`;
 }
 
 console.log(totale);
